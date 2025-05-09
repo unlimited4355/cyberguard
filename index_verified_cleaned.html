@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGuard | Fraud Recovery Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+        }
+        .stats-gradient {
+            background: linear-gradient(135deg, #4338ca 0%, #7c3aed 100%);
+        }
+        .report-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .glow {
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        }
+        .cyber-pattern {
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(30, 58, 138, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(30, 58, 138, 0.1) 0%, transparent 20%);
+        }
+        .animated-border {
+            position: relative;
+        }
+        .animated-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        .animated-border:hover::after {
+            width: 100%;
+        }
+        .hacker-terminal {
+            background-color: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 0.5rem;
+            font-family: 'Courier New', monospace;
+            color: #10b981;
+            padding: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .terminal-cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background-color: #10b981;
+            animation: blink 1s infinite;
+            vertical-align: middle;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .cyber-grid {
+            background-image: 
+                linear-gradient(rgba(30, 58, 138, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(30, 58, 138, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 cyber-pattern">
+    <!-- Header/Navigation -->
+    <header class="gradient-bg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-shield-alt text-blue-400 text-2xl"></i>
+                    <span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">CyberGuard</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="animated-border hover:text-blue-400 transition">Home</a>
+                    <a href="#services" class="animated-border hover:text-blue-400 transition">Services</a>
+                    <a href="#about" class="animated-border hover:text-blue-400 transition">About</a>
+                    <a href="#stats" class="animated-border hover:text-blue-400 transition">Success</a>
+                    <a href="#contact" class="animated-border hover:text-blue-400 transition">Report Fraud</a>
+                </nav>
+                <button class="md:hidden text-xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                        Recover Your <span class="text-blue-400">Stolen Funds</span> From Scammers
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-8">
+                        Our elite cyber investigation team specializes in tracing fraudulent transactions to their source, recovering funds, and bringing scammers to justice. With cutting-edge technology and legal expertise, we've helped thousands reclaim what's rightfully theirs.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300 transform hover:scale-105 glow">
+                            Report Fraud Now <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#services" class="border border-blue-400 text-blue-400 hover:bg-blue-900 hover:bg-opacity-30 px-6 py-3 rounded-lg font-medium transition duration-300">
+                            Learn More <i class="fas fa-info-circle ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="hacker-terminal">
+                            <div class="mb-4">
+                                <span class="text-green-400">user@victim:~$</span> connect_fraud_recovery
+                            </div>
+                            <div class="mb-4">
+                                <span class="text-green-400">system@cyberguard:~$</span> initiating_fund_trace...
+                            </div>
+                            <div class="mb-4">
+                                <span class="text-green-400">system@cyberguard:~$</span> scanning_blockchain...
+                            </div>
+                            <div>
+                                <span class="text-green-400">system@cyberguard:~$</span> funds_located <span class="text-yellow-400">0x7f...3a4b</span>
+                            </div>
+                            <div>
+                                <span class="text-green-400">system@cyberguard:~$</span> recovery_in_progress<span class="terminal-cursor"></span>
+                            </div>
+                        </div>
+                        <div class="absolute -inset-1 bg-blue-500 rounded-lg blur opacity-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="py-16 bg-gray-800 cyber-grid">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">
+                Our <span class="text-blue-400">2024</span> Recovery Success
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="stats-gradient p-8 rounded-xl text-center transform transition duration-500 hover:scale-105">
+                    <div class="text-5xl font-bold mb-2">700M+</div>
+                    <div class="text-xl">Dollars Recovered</div>
+                    <i class="fas fa-dollar-sign text-4xl mt-4 opacity-30"></i>
+                </div>
+                <div class="stats-gradient p-8 rounded-xl text-center transform transition duration-500 hover:scale-105">
+                    <div class="text-5xl font-bold mb-2">5,000+</div>
+                    <div class="text-xl">Victims Helped</div>
+                    <i class="fas fa-users text-4xl mt-4 opacity-30"></i>
+                </div>
+                <div class="stats-gradient p-8 rounded-xl text-center transform transition duration-500 hover:scale-105">
+                    <div class="text-5xl font-bold mb-2">98%</div>
+                    <div class="text-xl">Success Rate</div>
+                    <i class="fas fa-trophy text-4xl mt-4 opacity-30"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Our <span class="text-blue-400">Recovery</span> Services</h2>
+            <p class="text-center text-gray-400 max-w-2xl mx-auto mb-12">
+                We employ advanced forensic techniques to track and recover funds across all transaction methods
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="report-card bg-gray-800 p-8 rounded-xl transition duration-500 hover:shadow-lg">
+                    <div class="w-16 h-16 bg-blue-900 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-bitcoin text-blue-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Cryptocurrency Recovery</h3>
+                    <p class="text-gray-400 mb-4">
+                        Our blockchain forensic experts trace cryptocurrency transactions through mixers and tumblers to identify wallet owners and recover stolen funds.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-sm">Bitcoin</span>
+                        <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-sm">Ethereum</span>
+                        <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-sm">USDT</span>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="report-card bg-gray-800 p-8 rounded-xl transition duration-500 hover:shadow-lg">
+                    <div class="w-16 h-16 bg-blue-900 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-university text-blue-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Bank Transaction Recovery</h3>
+                    <p class="text-gray-400 mb-4">
+                        We work with financial institutions worldwide to trace fraudulent bank transfers, freeze accounts, and initiate chargebacks or reversals.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-sm">Wire Transfers</span>
+                        <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-sm">ACH</span>
+                        <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-sm">SWIFT</span>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="report-card bg-gray-800 p-8 rounded-xl transition duration-500 hover:shadow-lg">
+                    <div class="w-16 h-16 bg-blue-900 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-credit-card text-blue-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Payment Processor Recovery</h3>
+                    <p class="text-gray-400 mb-4">
+                        Our team specializes in recovering funds sent through payment processors by leveraging their fraud protection systems and our investigative methods.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-sm">PayPal</span>
+                        <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-sm">Venmo</span>
+                        <span class="bg-blue-900 text-blue-300 px-3 py-1 rounded-full text-sm">CashApp</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our <span class="text-blue-400">Recovery</span> Process</h2>
+            
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="hidden md:block absolute left-1/2 h-full w-1 bg-blue-500 transform -translate-x-1/2"></div>
+                
+                <!-- Process Steps -->
+                <div class="space-y-12 md:space-y-0">
+                    <!-- Step 1 -->
+                    <div class="relative flex flex-col md:flex-row items-center md:even:flex-row-reverse">
+                        <div class="md:w-1/2 mb-8 md:mb-0 md:px-8">
+                            <div class="bg-gray-900 p-8 rounded-xl">
+                                <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center absolute -left-6 md:left-1/2 md:-ml-6 -mt-4">
+                                    <span class="text-white font-bold">1</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3">Fraud Report & Analysis</h3>
+                                <p class="text-gray-400">
+                                    You submit detailed information about the fraud. Our team conducts a preliminary analysis to determine recovery feasibility and strategy.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:px-8">
+                            <div class="bg-gray-700 p-4 rounded-lg">
+                                <i class="fas fa-file-alt text-blue-400 text-4xl mb-3"></i>
+                                <p class="text-sm text-gray-300">Case documentation & initial assessment</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="relative flex flex-col md:flex-row items-center md:even:flex-row-reverse">
+                        <div class="md:w-1/2 mb-8 md:mb-0 md:px-8">
+                            <div class="bg-gray-900 p-8 rounded-xl">
+                                <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center absolute -left-6 md:left-1/2 md:-ml-6 -mt-4">
+                                    <span class="text-white font-bold">2</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3">Forensic Investigation</h3>
+                                <p class="text-gray-400">
+                                    Our experts employ advanced tracing techniques to follow the money trail through blockchain analysis, bank records, and digital footprints.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:px-8">
+                            <div class="bg-gray-700 p-4 rounded-lg">
+                                <i class="fas fa-search-dollar text-blue-400 text-4xl mb-3"></i>
+                                <p class="text-sm text-gray-300">Transaction tracing & digital forensics</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="relative flex flex-col md:flex-row items-center md:even:flex-row-reverse">
+                        <div class="md:w-1/2 mb-8 md:mb-0 md:px-8">
+                            <div class="bg-gray-900 p-8 rounded-xl">
+                                <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center absolute -left-6 md:left-1/2 md:-ml-6 -mt-4">
+                                    <span class="text-white font-bold">3</span>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3">Legal Action & Recovery</h3>
+                                <p class="text-gray-400">
+                                    We work with law enforcement and financial institutions to freeze accounts, initiate reversals, and recover your funds through legal channels.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:px-8">
+                            <div class="bg-gray-700 p-4 rounded-lg">
+                                <i class="fas fa-gavel text-blue-400 text-4xl mb-3"></i>
+                                <p class="text-sm text-gray-300">Asset freezing & legal proceedings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl font-bold mb-6">About <span class="text-blue-400">CyberGuard</span></h2>
+                    <p class="text-gray-400 mb-6">
+                        Founded by former cybersecurity experts and financial investigators, CyberGuard has become the leading fund recovery service in the fight against online fraud. Our team combines technical expertise with legal knowledge to track down scammers and recover stolen assets.
+                    </p>
+                    <p class="text-gray-400 mb-6">
+                        We've developed proprietary tools and techniques that allow us to trace transactions that others can't, working closely with law enforcement agencies worldwide to bring scammers to justice.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Elite team of former FBI cybercrime investigators</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Blockchain forensic specialists with proprietary tools</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Legal partnerships in 40+ countries</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-800 p-8 rounded-xl">
+                        <h3 class="text-xl font-bold mb-6 text-center">Our <span class="text-blue-400">Expertise</span></h3>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300">Cryptocurrency Tracing</span>
+                                    <span class="text-blue-400">95%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300">Bank Transaction Recovery</span>
+                                    <span class="text-blue-400">89%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 89%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300">Payment Processor Recovery</span>
+                                    <span class="text-blue-400">92%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300">Scammer Identification</span>
+                                    <span class="text-blue-400">87%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2.5">
+                                    <div class="bg-blue-600 h-2.5 rounded-full" style="width: 87%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Victim <span class="text-blue-400">Success Stories</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-900 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-xl font-bold text-blue-400">JS</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">James S.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 italic mb-4">
+                        "After losing $250,000 to a crypto investment scam, I thought my money was gone forever. CyberGuard traced the transactions through multiple wallets and exchanges. They recovered 85% of my funds within 3 months."
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i> Recovered: March 2024
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-900 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-xl font-bold text-blue-400">MR</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Maria R.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 italic mb-4">
+                        "I was victim of a romance scam that convinced me to send $50,000 via wire transfers. CyberGuard worked with international banks to freeze the accounts and recover my money. They even helped arrest the scammers!"
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i> Recovered: January 2024
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-900 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-xl font-bold text-blue-400">TK</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Thomas K.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 italic mb-4">
+                        "A fake trading platform took my $120,000 in Bitcoin. CyberGuard's blockchain analysts followed the money through mixers and identified the exchange accounts. They recovered 72% of my funds and provided evidence that led to 3 arrests."
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i> Recovered: February 2024
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-800 rounded-xl overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 gradient-bg p-8 md:p-12">
+                            <h2 class="text-2xl font-bold mb-6">Report <span class="text-blue-400">Fraud</span></h2>
+                            <p class="text-gray-300 mb-6">
+                                If you've been a victim of financial fraud, complete this form to begin the recovery process. Our team will review your case and contact you within 24 hours.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-lock text-blue-400 mt-1 mr-3"></i>
+                                    <span class="text-gray-300">All information is encrypted and kept confidential</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-clock text-blue-400 mt-1 mr-3"></i>
+                                    <span class="text-gray-300">Average response time: 4 hours</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-user-shield text-blue-400 mt-1 mr-3"></i>
+                                    <span class="text-gray-300">No recovery, no fee policy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-8 md:p-12">
+                            <form id="fraudReportForm" class="space-y-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Full Name</label>
+                                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-400">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-400">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Phone</label>
+                                    <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-400">
+                                </div>
+                                <div>
+                                    <label for="fraudType" class="block text-sm font-medium text-gray-300 mb-1">Type of Fraud</label>
+                                    <select id="fraudType" name="fraudType" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white">
+                                        <option value="">Select fraud type</option>
+                                        <option value="crypto">Cryptocurrency Scam</option>
+                                        <option value="bank">Bank Wire Fraud</option>
+                                        <option value="investment">Investment Scam</option>
+                                        <option value="romance">Romance Scam</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="amount" class="block text-sm font-medium text-gray-300 mb-1">Amount Lost (USD)</label>
+                                    <input type="number" id="amount" name="amount" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-400">
+                                </div>
+                                <div>
+                                    <label for="details" class="block text-sm font-medium text-gray-300 mb-1">Case Details</label>
+                                    <textarea id="details" name="details" rows="3" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-white placeholder-gray-400"></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-300 flex items-center justify-center">
+                                    Submit Report <i class="fas fa-paper-plane ml-2"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently <span class="text-blue-400">Asked Questions</span></h2>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <span class="text-lg font-medium">How long does the recovery process take?</span>
+                        <i class="fas fa-chevron-down text-blue-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-400">
+                            Recovery times vary depending on the complexity of the case. Simple bank fraud cases may be resolved in 2-4 weeks, while complex cryptocurrency scams can take 3-6 months. We provide regular updates throughout the process.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <span class="text-lg font-medium">What are your fees?</span>
+                        <i class="fas fa-chevron-down text-blue-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-400">
+                            We operate on a "no recovery, no fee" basis. If we're unsuccessful, you owe nothing. Our fee is a percentage of the recovered amount (typically 20-30%), depending on the case complexity. There are no upfront costs.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <span class="text-lg font-medium">Can you really trace cryptocurrency transactions?</span>
+                        <i class="fas fa-chevron-down text-blue-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-400">
+                            Yes. While cryptocurrency offers some anonymity, all transactions are recorded on the blockchain. Our forensic tools can follow the money trail through mixers and exchanges. We've successfully traced funds through 10+ hops to identify recipients.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <span class="text-lg font-medium">Do you work with law enforcement?</span>
+                        <i class="fas fa-chevron-down text-blue-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-400">
+                            Absolutely. We have established relationships with cybercrime units in multiple countries. When we identify scammers, we provide comprehensive evidence packages to law enforcement to support prosecution.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="bg-gray-900 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <span class="text-lg font-medium">What information do I need to provide?</span>
+                        <i class="fas fa-chevron-down text-blue-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-400">
+                            The more documentation you can provide, the better. This includes: transaction records, screenshots of communications, wallet addresses, bank account details involved, and any other evidence of the fraud. Our team will guide you on what's needed for your specific case.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to <span class="text-blue-400">Recover</span> Your Funds?</h2>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+                Don't let scammers get away with your hard-earned money. Our team is standing by to help.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#contact" class="bg-white hover:bg-gray-100 text-blue-900 px-8 py-4 rounded-lg font-bold transition duration-300 transform hover:scale-105">
+                    Report Fraud Now <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="tel:+18005551234" class="border border-white text-white hover:bg-white hover:bg-opacity-10 px-8 py-4 rounded-lg font-bold transition duration-300">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Us: +1 (800) 555-1234
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-shield-alt text-blue-400 text-2xl"></i>
+                        <span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">CyberGuard</span>
+                    </div>
+                    <p class="text-gray-400">
+                        The leading fund recovery service specializing in tracing and recovering stolen funds from all types of financial fraud.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-blue-400 transition">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-blue-400 transition">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-blue-400 transition">About Us</a></li>
+                        <li><a href="#stats" class="text-gray-400 hover:text-blue-400 transition">Success Stories</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-blue-400 transition">Report Fraud</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span>123 Cyber Security Way<br>New York, NY 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-blue-400"></i>
+                            <span>+1 (800) 555-1234</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-400"></i>
+                            <span>help@cyberguard.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-blue-400 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-blue-400 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-blue-400 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-blue-400 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mt-6 mb-4">Security Certifications</h3>
+                    <div class="flex space-x-2">
+                        <div class="bg-gray-800 px-3 py-1 rounded text-xs text-blue-400">ISO 27001</div>
+                        <div class="bg-gray-800 px-3 py-1 rounded text-xs text-blue-400">PCI DSS</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                        © 2024 CyberGuard Fund Recovery Services. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-500 hover:text-gray-300 text-sm">Privacy Policy</a>
+                        <a href="#" class="text-gray-500 hover:text-gray-300 text-sm">Terms of Service</a>
+                        <a href="#" class="text-gray-500 hover:text-gray-300 text-sm">Legal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+<script>
+  // FAQ Toggle Script
+  document.querySelectorAll('.faq-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('i');
+
+      // Close other FAQs
+      document.querySelectorAll('.faq-content').forEach(c => {
+        if (c !== content) c.classList.add('hidden');
+      });
+      document.querySelectorAll('.faq-toggle i').forEach(i => {
+        if (i !== icon) {
+          i.classList.remove('fa-chevron-up');
+          i.classList.add('fa-chevron-down');
+        }
+      });
+
+      content.classList.toggle('hidden');
+      icon.classList.toggle('fa-chevron-down');
+      icon.classList.toggle('fa-chevron-up');
+    });
+  });
+
+  // Mobile menu toggle
+  const menuBtn = document.querySelector('button.md\:hidden');
+  const menu = document.querySelector('nav.md\:flex');
+  if (menuBtn && menu) {
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  }
+</script>
+</body>
+</html>
